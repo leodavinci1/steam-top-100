@@ -1,7 +1,7 @@
 {
-  "name": "react-genesis",
+  "name": "steam-top-100",
   "version": "1.0.0",
-  "description": "A simple boilerplate with React, Redux, Redux Saga, ReduxSauce and Ducks architecture",
+  "description": "Steam's current top 100 most played games",
   "dependencies": {
     "apexcharts": "^3.25.0",
     "axios": "^0.21.1",

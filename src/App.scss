@@ -2,4 +2,90 @@
 @import './styles/fonts.scss';
 body {
   font-size: 16px;
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-font-smoothing: antialiased;
+  color: rgb(255, 255, 255);
+  font-feature-settings: "zero";
+  scroll-behavior: smooth;
+  font-family: Formular, sans-serif !important;
+  background-color: black;
+  .home-container {
+    max-width: 1500px;
+    padding: 20px 50px;
+    background-color: rgb(17, 26, 25);
+    margin: 0 auto;
+    #data {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .game-item {
+        width: 100%;
+        padding-left: 10px;
+        padding-right: 30px;
+        display: inline-flex;
+        &:hover {
+          .game-peak,.game-current, .place {
+            text-decoration: underline;
+          }
+        }
+        .description-progress {
+          display: inline-flex;
+          font-weight: 100;
+          margin: 5px 0;
+          font-size: 14px;
+          width: 85%;
+        }
+        .place {
+          margin: 15px 0;
+          width: 5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .game-progress {
+          margin: 5px 0;
+          width: 40%;
+          display: inline-flex;
+          justify-content: flex-end;
+          .progress {
+            height: 100%;
+            background-color: rgba(162, 245, 235, 0.2);
+          }
+        }
+        a {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+          transition: 1000ms color ease;
+          &:hover {
+            color: rgb(162, 245, 235)
+          }
+        }
+        .game-name {
+          font-size: 20px;
+          text-align: left;
+          margin: 15px 10px;
+          width: 40%;
+        }
+        .game-current {
+          width: 17.5%;
+          margin: 15px 10px;
+        }
+        .game-peak {
+          width: 17.5%;
+          margin: 15px 10px;
+        }
+        .description-current {
+          width: 17.5%;
+          margin: 15px 10px;
+        }
+        .description-peak {
+          width: 17.5%;
+          margin: 15px 10px;
+        }
+      }
+      
+    }
+  }
 }

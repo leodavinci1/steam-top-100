@@ -1,8 +1,31 @@
 .navbar {
   &--list {
+    font-size: 16px;
     list-style: none;
-    padding: 0px;
+    padding: 0px 50px;
+    margin-left: 50px;
+    margin-right: 50px;
     display: inline-flex;
+    max-width: 1500px;
+    width: 80%;
+    justify-content: space-between;
+    li {
+      display: inline-flex;
+      align-items: center;
+    }
+    .status-green {
+      background: #7FEB45;
+      width: 12px;
+      margin-top: 1px;
+      height: 12px;
+      border-radius: 50%;
+      display: inline-flex;
+      margin-left: 10px;
+    }
+    a {
+      color: white;
+      text-decoration: none;
+    }
   }
   &--divider {
     margin: 0px 5px;
